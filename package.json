@@ -10,6 +10,27 @@
   "dependencies": {
     "node-uuid": "~1.4.1"
   },
+  "devDependencies": {
+    "express": "~3.4.4",
+    "connect-multiparty": "~1.0.1",
+    "mocha": "~1.16.2",
+    "should": "2.0.2",
+    "blanket": "~1.1.6",
+    "travis-cov": "~0.2.4",
+    "mocha-lcov-reporter": "~0.0.1",
+    "coveralls": "~2.6.1",
+    "supertest": "~0.8.2"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "express-fileuploader/lib"
+      ]
+    },
+    "travis-cov": {
+      "threshold": 80
+    }
+  },
   "keywords": [
     "upload",
     "uploader",
