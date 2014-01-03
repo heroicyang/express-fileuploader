@@ -7,6 +7,7 @@ lib-cov
 *.pid
 *.gz
 
+.DS_Store
 pids
 logs
 results
@@ -14,4 +15,6 @@ results
 npm-debug.log
 node_modules
 
-coverage.html
+test/fixtures/*
+!test/fixtures/heroic.jpg
+!test/fixtures/leaf.jpeg
