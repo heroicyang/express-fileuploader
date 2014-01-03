@@ -1,4 +1,4 @@
-express-uploader
+express-fileuploader
 ===================
 
 Easy to use generic file uploader for Express.
