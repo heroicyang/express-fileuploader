@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git://github.com/heroicyang/express-fileuploader.git"
   },
+  "scripts": {
+    "test": "make test-all"
+  },
   "dependencies": {
     "node-uuid": "~1.4.1"
   },

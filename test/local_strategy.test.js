@@ -43,6 +43,14 @@ describe('local_strategy.test.js', function() {
         });
       });
 
+      if (fs.existsSync('test/fixtures/uploads')) {
+        fs.readdirSync('test/fixtures/uploads')
+          .forEach(function(file) {
+            fs.unlinkSync('test/fixtures/uploads/' + file);
+          });
+        fs.rmdirSync('test/fixtures/uploads');
+      }
+
       request(app)
         .post('/upload/image')
         .attach('avatar', 'test/fixtures/heroic.jpg')
