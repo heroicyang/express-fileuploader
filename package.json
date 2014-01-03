@@ -1,11 +1,11 @@
 {
-  "name": "express-uploader",
+  "name": "express-fileuploader",
   "version": "0.0.1",
   "description": "Easy to use generic file uploader for Express.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/heroicyang/express-uploader.git"
+    "url": "git://github.com/heroicyang/express-fileuploader.git"
   },
   "dependencies": {
     "node-uuid": "~1.4.1"
@@ -14,7 +14,9 @@
     "upload",
     "uploader",
     "express",
-    "express-uploader"
+    "express-upload",
+    "express-uploader",
+    "express-fileuploader"
   ],
   "author": {
     "name": "Heroic Yang",

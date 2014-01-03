@@ -6,7 +6,7 @@ Easy to use generic file uploader for Express.
 ## Install
 
 ```bash
-npm install express-uploader --save
+npm install express-fileuploader --save
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install express-uploader --save
 var http = require('http');
 var express = require('express');
 var mutilpart = require('connect-multiparty');
-var uploader = require('express-uploader');
+var uploader = require('express-fileuploader');
 
 var app = express();
 app.use('/upload/image', mutilpart());
