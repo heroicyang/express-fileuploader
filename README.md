@@ -26,8 +26,10 @@ uploader.use(new uploader.LocalStrategy({
 }));
 
 app.post('/upload/image', function(req, res, next) {
-  uploader.upload('local', req.files, function(err, files) {
-    if (err) { return next(err); }
+  uploader.upload('local', req.files['images'], function(err, files) {
+    if (err) {
+      return next(err);
+    }
     res.send(JSON.stringify(files));
   });
 });

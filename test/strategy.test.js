@@ -11,7 +11,7 @@ var Strategy = require('../lib/strategy');
 
 describe('strategy.test.js', function() {
   describe('Strategy.extend(options)', function() {
-    it('Strategy#upload method does not override should throw error', function() {
+    it('Strategy#upload does not override should throw error', function() {
       var TestStrategy = Strategy.extend({
         name: 'test'
       });
@@ -19,7 +19,7 @@ describe('strategy.test.js', function() {
       test.upload.should.throwError();
     });
 
-    it('define strategy constructor', function() {
+    it('define strategy\'s constructor', function() {
       var TestStrategy = Strategy.extend({
         name: 'test',
         constructor: function(options) {
@@ -37,7 +37,7 @@ describe('strategy.test.js', function() {
       should.exist(test.uploadPath);
     });
 
-    it('Strategy#upload worked', function(done) {
+    it('override Strategy#upload', function(done) {
       var TestStrategy = Strategy.extend({
         name: 'test',
         constructor: function(options) {
