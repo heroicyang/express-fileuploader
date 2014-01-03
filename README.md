@@ -48,8 +48,8 @@ http.createServer(app).listen(8000);
 
 ## Plugins / Strategies
 
-- [Qiniu](https://github.com/heroicyang/express-uploader-qiniu)   Upload files to Qiniu
-- [S3](https://github.com/heroicyang/express-uploader-s3)      Upload files to S3
+- [Qiniu](https://github.com/heroicyang/express-fileuploader-qiniu)   Upload files to Qiniu
+- [S3](https://github.com/heroicyang/express-fileuploader-s3)      Upload files to S3
 
 ## Custom strategy
 
@@ -88,6 +88,8 @@ uploader.upload('custom', req.files['images'], function(err, files) {
   // uploaded
 });
 ```
+
+An example: https://github.com/heroicyang/express-fileuploader/blob/master/lib/strategies/local.js
 
 ##License
 
