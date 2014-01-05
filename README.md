@@ -48,15 +48,18 @@ http.createServer(app).listen(8000);
 
 ## Plugins / Strategies
 
-- [Qiniu](https://github.com/heroicyang/express-fileuploader-qiniu)   Upload files to Qiniu
-- [S3](https://github.com/heroicyang/express-fileuploader-s3)      Upload files to S3
+Strategy | Description
+--- | ---
+[QiniuStrategy](https://github.com/heroicyang/express-fileuploader-qiniu) | Upload files to [Qiniu](http://www.qiniu.com/)
+[S3Strategy](https://github.com/heroicyang/express-fileuploader-s3) | Upload files to [Amazon S3](http://aws.amazon.com/s3/)
+[DropboxStrategy](https://github.com/heroicyang/express-fileuploader-dropbox) | Upload files to [Dropbox](https://www.dropbox.com/)
 
 ## Custom strategy
 
 ```javascript
 var Strategy = require('express-fileuploader').Strategy;
 var CustomStrategy = Strategy.extend({
-  name: 'strategy\'s name',
+  name: 'custom',
   constructor: function(options) {
     options = options || {};
     this.uploadPath = options.uploadPath;
@@ -70,10 +73,10 @@ var CustomStrategy = Strategy.extend({
 
 // publish to npm, named `express-fileuploader-test ` for example
 
-// use
+// install
 npm install express-fileuploader-test --save
 
-// then
+// use
 var uploader = require('express-fileuploader');
 var CustomStrategy = require('express-fileuploader-test');
 uploader.use('custom', new CustomStrategy({
