@@ -50,6 +50,7 @@ http.createServer(app).listen(8000);
 
 Strategy | Description
 --- | ---
+[LocalStrategy](https://github.com/heroicyang/express-fileuploader/blob/master/lib/strategies/local.js)(Built-in strategy) | Upload files to local directory
 [QiniuStrategy](https://github.com/heroicyang/express-fileuploader-qiniu) | Upload files to [Qiniu](http://www.qiniu.com/)
 [S3Strategy](https://github.com/heroicyang/express-fileuploader-s3) | Upload files to [Amazon S3](http://aws.amazon.com/s3/)
 [DropboxStrategy](https://github.com/heroicyang/express-fileuploader-dropbox) | Upload files to [Dropbox](https://www.dropbox.com/)
@@ -91,6 +92,12 @@ uploader.upload('custom', req.files['images'], function(err, files) {
   // uploaded
 });
 ```
+
+### Strategy.extend options
+
+- **name** The strategy's name
+- **constructor**  Strategy's constructor. When creating an instance of a strategy, you might need some additional information
+- **upload** Your file process logic, must be override
 
 An example: https://github.com/heroicyang/express-fileuploader/blob/master/lib/strategies/local.js
 
