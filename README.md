@@ -31,7 +31,7 @@ app.use('/upload/image', mutilpart());
 
 uploader.use(new uploader.LocalStrategy({
   uploadPath: '/uploads',
-  domain: 'http://127.0.0.1:8000'
+  baseUrl: 'http://127.0.0.1:8000/uploads/'
 }));
 
 app.post('/upload/image', function(req, res, next) {

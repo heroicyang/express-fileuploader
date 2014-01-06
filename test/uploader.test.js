@@ -62,7 +62,7 @@ describe('uploader.test.js', function() {
 
       uploader.use(new uploader.LocalStrategy({
         uploadPath: 'test/fixtures/public',
-        domain: 'http://127.0.0.1:8000'
+        baseUrl: 'http://127.0.0.1:8000/public/'
       }));
 
       app.post('/upload/image', function(req, res) {
@@ -93,7 +93,7 @@ describe('uploader.test.js', function() {
 
       uploader.use(new uploader.LocalStrategy({
         uploadPath: 'test/fixtures/public',
-        domain: 'http://127.0.0.1:8000'
+        baseUrl: 'http://127.0.0.1:8000/public/'
       }));
 
       app.post('/upload/image', function(req, res) {
@@ -126,7 +126,7 @@ describe('uploader.test.js', function() {
 
       uploader.use(new uploader.LocalStrategy({
         uploadPath: 'test/fixtures/public',
-        domain: 'http://127.0.0.1:8000'
+        baseUrl: 'http://127.0.0.1:8000/public/'
       }));
 
       app.post('/upload/image', function(req, res) {
@@ -160,7 +160,7 @@ describe('uploader.test.js', function() {
 
       uploader.use(new uploader.LocalStrategy({
         uploadPath: 'test/fixtures/public',
-        domain: 'http://127.0.0.1:8000'
+        baseUrl: 'http://127.0.0.1:8000/public/'
       }));
 
       app.post('/upload/image', function(req, res) {

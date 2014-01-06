@@ -55,7 +55,7 @@ describe('local_strategy.test.js', function() {
         .post('/upload/image')
         .attach('avatar', 'test/fixtures/heroic.jpg')
         .expect(200)
-        .end(function(err, res) {
+        .end(function(err) {
           if (err) {
             return done(err);
           }
