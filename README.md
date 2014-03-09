@@ -10,7 +10,6 @@ Easy to use generic file uploader for Express.
 - **Automatically delete temporary files**
 - **Plugable**
 - **Custom strategy**
-- **Growing number of strategies**
 
 ## Install
 
@@ -53,7 +52,6 @@ Strategy | Description
 [LocalStrategy](https://github.com/heroicyang/express-fileuploader/blob/master/lib/strategies/local.js)(Built-in strategy) | Upload files to local directory
 [QiniuStrategy](https://github.com/heroicyang/express-fileuploader-qiniu) | Upload files to [Qiniu](http://www.qiniu.com/)
 [S3Strategy](https://github.com/heroicyang/express-fileuploader-s3) | Upload files to [Amazon S3](http://aws.amazon.com/s3/)
-[DropboxStrategy](https://github.com/heroicyang/express-fileuploader-dropbox) | Upload files to [Dropbox](https://www.dropbox.com/)
 
 ## Custom strategy
 
