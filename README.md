@@ -3,7 +3,7 @@ express-fileuploader
 
 [![NPM version](https://badge.fury.io/js/express-fileuploader.png)](http://badge.fury.io/js/express-fileuploader) [![Build Status](https://travis-ci.org/heroicyang/express-fileuploader.png)](https://travis-ci.org/heroicyang/express-fileuploader]) [![Coverage Status](https://coveralls.io/repos/heroicyang/express-fileuploader/badge.png)](https://coveralls.io/r/heroicyang/express-fileuploader)  [![Dependency Status](https://gemnasium.com/heroicyang/express-fileuploader.png)](https://gemnasium.com/heroicyang/express-fileuploader)
 
-Easy to use generic file uploader for Express.
+> Easy to use generic file uploader for Express.
 
 ## Features
 
