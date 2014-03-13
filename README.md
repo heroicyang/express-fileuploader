@@ -1,16 +1,15 @@
 express-fileuploader
 ===================
 
-[![Build Status](https://travis-ci.org/heroicyang/express-fileuploader.png)](https://travis-ci.org/heroicyang/express-fileuploader]) [![Coverage Status](https://coveralls.io/repos/heroicyang/express-fileuploader/badge.png)](https://coveralls.io/r/heroicyang/express-fileuploader)  [![Dependency Status](https://gemnasium.com/heroicyang/express-fileuploader.png)](https://gemnasium.com/heroicyang/express-fileuploader)
+[![NPM version](https://badge.fury.io/js/express-fileuploader.png)](http://badge.fury.io/js/express-fileuploader) [![Build Status](https://travis-ci.org/heroicyang/express-fileuploader.png)](https://travis-ci.org/heroicyang/express-fileuploader]) [![Coverage Status](https://coveralls.io/repos/heroicyang/express-fileuploader/badge.png)](https://coveralls.io/r/heroicyang/express-fileuploader)  [![Dependency Status](https://gemnasium.com/heroicyang/express-fileuploader.png)](https://gemnasium.com/heroicyang/express-fileuploader)
 
-Easy to use generic file uploader for Express.
+> Easy to use generic file uploader for Express.
 
 ## Features
 
 - **Automatically delete temporary files**
 - **Plugable**
 - **Custom strategy**
-- **Growing number of strategies**
 
 ## Install
 
@@ -53,7 +52,6 @@ Strategy | Description
 [LocalStrategy](https://github.com/heroicyang/express-fileuploader/blob/master/lib/strategies/local.js)(Built-in strategy) | Upload files to local directory
 [QiniuStrategy](https://github.com/heroicyang/express-fileuploader-qiniu) | Upload files to [Qiniu](http://www.qiniu.com/)
 [S3Strategy](https://github.com/heroicyang/express-fileuploader-s3) | Upload files to [Amazon S3](http://aws.amazon.com/s3/)
-[DropboxStrategy](https://github.com/heroicyang/express-fileuploader-dropbox) | Upload files to [Dropbox](https://www.dropbox.com/)
 
 ## Custom strategy
 
