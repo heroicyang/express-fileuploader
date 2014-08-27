@@ -1,6 +1,6 @@
 {
   "name": "express-fileuploader",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Easy to use generic file uploader for Express.",
   "main": "index.js",
   "repository": {

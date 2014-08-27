@@ -52,6 +52,7 @@ Strategy | Description
 [LocalStrategy](https://github.com/heroicyang/express-fileuploader/blob/master/lib/strategies/local.js)(Built-in strategy) | Upload files to local directory
 [QiniuStrategy](https://github.com/heroicyang/express-fileuploader-qiniu) | Upload files to [Qiniu](http://www.qiniu.com/)
 [S3Strategy](https://github.com/heroicyang/express-fileuploader-s3) | Upload files to [Amazon S3](http://aws.amazon.com/s3/)
+[OssStrategy](https://github.com/heroicyang/express-fileuploader-oss) | Upload files to [aliyun OSS](www.aliyun.com/product/oss)
 
 ## Custom strategy
 
